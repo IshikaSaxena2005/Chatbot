@@ -1,0 +1,118 @@
+CREATE TABLE Overview (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    content TEXT
+);
+
+-- Table for IT Infrastructure Consultancy
+CREATE TABLE IT_Infrastructure_Consultancy (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    content TEXT
+);
+
+-- Table for iBOX
+CREATE TABLE iBOX (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    content TEXT
+);
+
+-- Table for mDSS
+CREATE TABLE mDSS (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    content TEXT
+);
+
+-- Table for mCHECK
+CREATE TABLE mCHECK (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    content TEXT
+);
+
+-- Table for MINETag
+CREATE TABLE MINETag (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    content TEXT
+);
+
+-- Table for RFID Hand-held Reader
+CREATE TABLE RFID_Handheld_Reader (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    content TEXT
+);
+
+-- Table for mAlert Health Monitoring System
+CREATE TABLE mAlert_Health_Monitoring_System (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    content TEXT
+);
+
+-- Table for Challenges
+CREATE TABLE Challenges (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    content TEXT
+);
+
+-- Table for State Wise Potential iCheckgate
+CREATE TABLE State_Wise_Potential_iCheckgate (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    state VARCHAR(100),
+    mining_districts INT
+);
+
+-- Insert data into Overview table
+INSERT INTO Overview (content)
+VALUES ('AI & IoT based Smart Enforcement System comprising of Unmanned CHECKGATE, mCheck Mobile App, Decision Support System and Command Center with real-time surveillance & alert mechanism from Mine to Market and provision for issuance of e-notices & online payment facility for penalty recovery.');
+
+-- Insert data into IT Infrastructure Consultancy table
+INSERT INTO IT_Infrastructure_Consultancy (content)
+VALUES ('IT infrastructure comprises the arrangement of hardware and network resources, along with the necessary facilities, to enable the delivery of information. This setup includes servers, laptops, storage devices, an integrated power management system, and networking equipment, which consists of an Internet-leased line with an IP54 rack and various switches.');
+
+-- Insert data into iBOX table
+INSERT INTO iBOX (content)
+VALUES ('iBOX is the central processing unit of the entire system, employing trained models to analyze extensive datasets. It executes a range of tasks, including the identification of minerals, the classification of vehicle types, the recognition of vehicle numbers, data processing, and the creation of time-stamped dataset bundles.');
+
+-- Insert data into mDSS table
+INSERT INTO mDSS (content)
+VALUES ('mDSS offers a live data preview to iCheckGate, facilitating the real-time monitoring and identification of violations in alignment with mining department policies. It oversees operations linked to the mCheck App, facilitating the issuance of e-notices during on-site inspections. Additionally, mDSS manages weighbridge activities, addresses anomalies, and oversees e-notice management. This system plays a pivotal role in enforcing regulations and upholding compliance within the mining industry.');
+
+-- Insert data into mCHECK table
+INSERT INTO mCHECK (content)
+VALUES ('mCHECK is designed for on-the-spot verification of transit passes and detecting illegal transportation-related offenses. It uses information such as transit pass numbers, QR codes, vehicle numbers, and chassis numbers to identify and verify transit passes. It also assists in identifying fraudulent transit passes and generating alerts for pending notices.');
+
+-- Insert data into MINETag table
+INSERT INTO MINETag (content)
+VALUES ('MINETag is a vehicle identification system that streamlines and enhances the tracking of mineral transportation within the state.');
+
+-- Insert data into RFID Hand-held Reader table
+INSERT INTO RFID_Handheld_Reader (content)
+VALUES ('RFID Hand-held Reader empowers on-spot vehicle and transit pass inspections for effective prevention of illegal mineral transportation.');
+
+-- Insert data into mAlert Health Monitoring System table
+INSERT INTO mAlert_Health_Monitoring_System (content)
+VALUES ('mAlert Health Monitoring System oversees the operational status of the hardware equipment integrated into the IT infrastructure. It encompasses components dedicated to monitoring hardware health, tracking case statuses, managing expenses, and monitoring evidence.');
+
+-- Insert data into Challenges table
+INSERT INTO Challenges (content)
+VALUES ('The minor mineral mining business across 20 states of India generates an annual revenue of $126 billion, equivalent to ₹1.50 lakh crore. This sector grapples with a significant issue of royalty pilferage, estimated at an average of about 30% per annum (₹ 50,000 Crore).');
+
+-- Insert data into State Wise Potential iCheckgate table
+INSERT INTO State_Wise_Potential_iCheckgate (state, mining_districts)
+VALUES ('Assam', 33),
+       ('Andhra Pradesh', 12),
+       ('Bihar', 31),
+       ('Chhattisgarh', 27),
+       ('Goa', 2),
+       ('Gujrat', 32),
+       ('Haryana', 16),
+       ('Himachal Pradesh', 11),
+       ('Jammu Kashmir', 10),
+       ('Karnataka', 10),
+       ('Kerala', 4),
+       ('Madhya Pradesh', 52),
+       ('Maharashtra', 34),
+       ('Punjab', 16),
+       ('Rajasthan', 28),
+       ('Tamil Nadu', 30),
+       ('Telangana', 27),
+       ('Uttarakhand', 13),
+       ('Uttar Pradesh', 68),
+       ('West Bengal', 8);
